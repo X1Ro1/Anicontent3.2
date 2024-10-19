@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #040508;
+    font-family: "Onest";
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: #1AD857;
+    color: #fff; 
+   }
+
+@font-face {
+    font-family: "Onest";
+    src: url("../fonts/onset/WOFF/OnestMedium1602-hint.woff");
+}
+
+@font-face {
+    font-family: "CyGrotesk";
+    src: url("../fonts/CyGrotesk/cy-grotesk-grand-dark.otf");
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1760px;
+    background: #040508;
+    padding: 12px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* backdrop-filter: blur(4px);
+    background: var(--header, rgba(39, 40, 46, 0.60)); */
+}
+
+
+.header-menu {
+    display: flex;
+    gap: 20px;
+}
+.header-menu a{
+    color: #6E6E6E;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.header-menu a:hover {
+    color: white;
+    transition: 0.2s;
+}
+.header-reg {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-reg a{
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header-reg a:hover {
+    background: #0d9438;
+    transition: 0.2s;
+    color: white;
+}
+
+
+
+
+
+.main-swiper_txt {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; 
+    position: absolute;
+    top: 40%;
+    padding: 20px;
+    width: 100%;
+    max-width: 1760px;
+}
+
+.main-swiper-muted {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.main-swiper-muted a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 16px;
+    border-radius: 124px;
+}
+
+.main-swaper video {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.main-swiper-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.swiper-content-page {
+    display: flex;
+    gap: 12px;
+    color: #DCDFE2;
+    font-size: 16px;
+}
+
+.swiper-content-page-appraisal {
+    display: flex;
+    gap: 4px;
+}
+
+.main-title h1 {
+    font-family: "CyGrotesk";
+    font-size: 32px;
+    color: white;
+    
+}
+
+.main-swiper-nov p {
+    background: white;
+    color: #16171A;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.swiper-content-page-appraisal {
+    color: #FBA600;
+}
+
+
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(4, 5, 8, 0.99), rgba(4, 5, 8, 0));
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+.main-swiper-btn {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.swiper-btn-view a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    transition: 0.2s;
+    background: #1AD857;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.swiper-btn-view a:hover {
+    background: #0d9438;
+}
+
+.swiper-btn-trailer a{
+    padding: 10px 20px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #040508;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.main-swiper-description p{
+    color: white;
+    font-size: 16px;
+}
+.swiper-btn-trailer a:hover {
+    transition: 0.2s;
+    background: rgb(223, 223, 223);
+}
+
+
+
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1760px;
+}
+
+
+
+.main-view-card_card {
+    overflow: hidden;
+    cursor: all-scroll;
+    width: 100%;
+    max-width: 1760px;
+}
+
+
+.main-view-card_inner {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.main-view-scrool_img {
+    width: 100%;
+    max-width: 278px;
+}
+
+.main-view_title p{
+    color: #6E6E6E;
+    font-size: 16px;
+}
+
+.main-view-card_inner a{
+    color: #6E6E6E;
+}
+
+.main-view_title h1{
+    color: white;
+    font-family: "CyGrotesk";
+}
+
+.main-view-card_card {
+    display: flex;
+    gap: 20px;
+}
+
+.main-view-scrool_img img{
+    transition: 0.4s;
+}
+.main-view-scrool_img img:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+.main-view-scrool_img h3{
+    color: white;
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-view-scrool_img h3:hover{
+    color: #1AD857;
+    transition: 0.2s;
+}
